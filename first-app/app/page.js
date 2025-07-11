@@ -12,6 +12,7 @@ export default async function Home({searchParams, params}) {
       <Link href="/about">about</Link> 
       {""}
       <Link href="/services">services</Link>
+      <Link href="/files">Files</Link>
     </>
   );
 }
