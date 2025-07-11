@@ -1,15 +1,17 @@
-
-import About from './about/page';
 import Link from "next/link";
-import Services from './services/page.js';
 
-export default function Home() { 
-
-return (     
-
+export default async function Home({searchParams, params}) {
+  console.log( await searchParams);
+  console.log( await params);
+  
+  return (
     <>
-    <h1>Welcome to Home.</h1>
-    <Link href="/about">About</Link> { }<Link href="/services">Services</Link>
+      <h1>Welcome Technical Agency</h1>
+      <Link href="/blogs">Blogs</Link>
+      {" "}
+      <Link href="/about">about</Link> 
+      {""}
+      <Link href="/services">services</Link>
     </>
   );
 }

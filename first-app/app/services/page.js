@@ -1,9 +1,29 @@
-
-export  default function Services(){
+import Link  from "next/link";
+export default function Services() {
   return (
-    <>
-      <h1>  service</h1>
-       
-    </>
-  )
+    <div>
+      <h1>Services</h1>
+
+      <p>
+        <Link href="/services/web-dev">Web    Devlopment</Link>
+      </p>
+      
+      
+      <p>
+        {" "}
+        <Link href="/services/analist">Data Analist</Link>
+      </p>
+       <p>
+        {" "}
+        <Link href="/services/seo">SEO</Link>
+      </p>
+      {/*
+      <p>
+        {" "}
+        <Link href="/"> Seo</Link>
+      </p> */}
+    </div>
+  );
 }
+
+//  Services
