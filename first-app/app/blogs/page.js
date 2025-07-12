@@ -1,4 +1,7 @@
-import React from 'react'
+
+export const metadata = {
+ title:"Blog",
+}
 
 export default  async function Blog({searchParams, params}){
     console.log();
