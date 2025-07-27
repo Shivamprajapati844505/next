@@ -16,4 +16,5 @@ export default function Like() {
 
 
 //Server components execute only on the server
+ettsxd
 //Client components execute on the server as well as on the client

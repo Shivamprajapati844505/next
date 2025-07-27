@@ -1,35 +1,29 @@
 "use client";
+import { useEffect, useState } from 'react';
 
-import { useEffect, useState } from "react";
-
-const Posts = () => {
+export default function Post() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
     async function fetchPosts() {
-      const response = await fetch(
-        "https://jsonplaceholder.typicode.com/posts?_limit=5"
-      );
+      const response = await fetch('https://jsonplaceholder.typicode.com/posts');
       const data = await response.json();
-      setPosts(data);
+      setPosts(data); 
+      console.log(data);
     }
-
     fetchPosts();
   }, []);
 
   return (
-    <>
+    <div>
       <h1>Posts</h1>
-      <div className="posts-container">
-        {posts.map(({ id, title, body }) => (
-          <div className="post-card" key={id}>
-            <h2>{title}</h2>
-            <p>{body}</p>
-          </div>
-        ))}
-      </div>
-    </>
+      <ul>
+        {
+        posts.map(post => (
+          <li key={post.id}>{post.title}</li>
+        ))
+        }
+      </ul>
+    </div>
   );
-};
-
-export default Posts;
+}
