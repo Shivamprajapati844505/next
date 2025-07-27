@@ -1,7 +1,7 @@
 import Link from "next/link";
 
-//jab hume SSG 
-// export const dynamicParams = false;
+//jab hume SSG me koi or extra page nahi karvana chate hai 
+export const dynamicParams = false;
 
 // ISR(Incremental Site Rendering)
 export const revalidate = 5;

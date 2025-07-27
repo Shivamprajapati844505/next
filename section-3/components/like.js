@@ -10,10 +10,7 @@ export default function Like() {
 
   return (
     
-    <div onClick={()=>{
-        setLikeCount((prev) => prev + 1)
-        
-    }}>{likeCount}likes {console.log("running confirm....")}</div>
+    <div onClick={()=>{setLikeCount((prev) => prev + 1)}}>{likeCount}likes {console.log("running confirm....")}</div>
   )
 }
 

@@ -49,11 +49,11 @@ const Blogs = () => {
         <br />
         <div className="blog-links">
          
-          {/* <Suspense fallback="Loading views...">
+        <Suspense fallback="Loading views...">
             <View />
-          </Suspense> */}
+        </Suspense> 
           <Like />
-          {/* <Comment /> */}
+          <Comment />
         </div>
       </div>
     </>
