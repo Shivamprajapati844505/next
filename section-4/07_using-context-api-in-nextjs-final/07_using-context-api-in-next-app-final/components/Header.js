@@ -42,7 +42,7 @@ export default function Header() {
 
       <button onClick={toggleTheme}>
         {isDark ? <SunIcon /> : <MoonIcon />}
-      </button>
+      </button>Y 
     </nav>
   );
 }

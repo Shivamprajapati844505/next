@@ -14,8 +14,7 @@ export default function Error({ error, reset }) {
             router.refresh();
             reset();
           });
-        }}
-      >
+          }}>
         Try Again
       </button>
     </div>
